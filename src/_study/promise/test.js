@@ -48,7 +48,7 @@ function test4() {
   for (var i = 0; i < length; i++);{
     numbers.push(i + 1);
   }
-  console.log(numbers) // => [ 5 ] // { 前面的“;”好贱
+  console.log(numbers) // => [ 5 ] // "{" 前面的“;”好贱
 }
 // test4();
 
@@ -58,6 +58,6 @@ function test5() {
     return
       [items]; // @@@ 很容易忽略关键字 return 和表达式 [items] 之间的换行。 换行符会使 JavaScript 自动在 return 和 [items] 表达式之间插入分号。 return ;
     }
-  console.log(arrayFromValue(10)); // => undefined  又是细节题 
+  console.log(arrayFromValue(10)); // => undefined  又是细节题
 }
 test5();
