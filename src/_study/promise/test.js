@@ -36,9 +36,18 @@ function test2() {
 
 function test3() {
   const clothes = ['jacket', 't-shirt'];
-  clothes.length = 0;
+  clothes.length = 0;  // => clothes.length = 0 时，会删除 clothes 数组中的所有项s
   console.log(clothes[0]) ; // => undefined
 }
-test3()
+// test3()
 
 
+function test4() {
+  const length = 4;
+  const numbers = [];
+  for (var i = 0; i < length; i++);{
+    numbers.push(i + 1);
+  }
+  console.log(numbers) // => [ 5 ] // { 前面的“;”好贱
+}
+test4();
