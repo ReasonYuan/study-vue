@@ -31,4 +31,14 @@ function test2() {
   console.log(typeof a); // => undefined
   console.log(typeof b); // => 0
 }
-test2();
+// test2();
+
+
+function test3() {
+  const clothes = ['jacket', 't-shirt'];
+  clothes.length = 0;
+  console.log(clothes[0]) ; // => undefined
+}
+test3()
+
+
