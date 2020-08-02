@@ -61,3 +61,5 @@ function test5() {
   console.log(arrayFromValue(10)); // => undefined  又是细节题 
 }
 // test5();
+
+console.log('-----------test')
