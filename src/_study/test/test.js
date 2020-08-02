@@ -61,14 +61,3 @@ function test5() {
   console.log(arrayFromValue(10)); // => undefined  又是细节题 
 }
 // test5();
-
-
-function test6 () {
-  let a = 0;
-  const fn = () => {
-    a++;
-  }
-  fn();
-  console.log(a);
-}
-test6();
