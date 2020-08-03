@@ -1,0 +1,12 @@
+// REST Client -> 接口查看
+
+
+GET www.baidu.com HTTP/1.1 
+
+// TODO 什么鬼
+POST www.baidu.com
+Content-Type: application/json
+{
+  "name": "张三",
+  "age": 18,
+}
