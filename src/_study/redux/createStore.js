@@ -1,18 +1,20 @@
 
 
-export default createStore = (reducer) => {
-  
+export default function (reducer, preloadedState) {
+
   if (typeof reducer !== 'function') {
     throw new Error('Expected the reducer to be a function.')
   }
 
 
-  let store = {}
+  let state = preloadedState
   const listeners = [];
 
   // 更新数据
   const dispatch = (action) => {
-    store = reducer(action);
+    state = reducer(state, action);
+
+    listeners.forEach(listener => listener())
   }
 
   // 添加订阅者
@@ -22,8 +24,13 @@ export default createStore = (reducer) => {
 
   // 获取当前Store
   const getState = () => {
-    return store;
+    return state;
   }
 
+  return {
+    getState,
+    dispatch,
+    subscribe
+  }
 
 }
