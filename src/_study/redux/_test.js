@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-05 15:48:40
- * @LastEditTime: 2020-08-05 16:35:54
+ * @LastEditTime: 2020-08-06 20:35:55
  * @FilePath: /study-vue/src/_study/redux/_test.js
  * @Descripttion: 
  */
@@ -14,7 +14,7 @@
  */
 
 
-import { createStore } from './index';
+import { createStore, combineReducers } from './index';
 
 const initState = { count: 0 };
 const reducer = (state = initState, action) => {
@@ -27,16 +27,33 @@ const reducer = (state = initState, action) => {
   }
 }
 
+const initStateB = { name: '' };
+const reducerB = (state = initStateB, action) => {
+  // const newState = JSON.parse(JSON.stringify(state))
+  switch (action.type) {
+    case 'set':
+      return { ...state, name: action.value}
+    default: 
+      return state;  
+  }
+}
+
 // const actionCreator = () => {
 // }
 
 
 
-const store = createStore(reducer);
+const reducers = combineReducers({
+  a: reducer,
+  b: reducerB
+})
+
+const store = createStore(reducers);
 store.subscribe(() => {
   console.log('------->update:', store.getState())
 })
 store.dispatch({ type: 'add' })
+store.dispatch({ type: 'set', value: 'sb' })
 
 
 export default {}
