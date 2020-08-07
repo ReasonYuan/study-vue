@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-05 15:48:40
- * @LastEditTime: 2020-08-06 20:35:55
+ * @LastEditTime: 2020-08-07 16:36:05
  * @FilePath: /study-vue/src/_study/redux/_test.js
  * @Descripttion: 
  */
@@ -54,6 +54,7 @@ store.subscribe(() => {
 })
 store.dispatch({ type: 'add' })
 store.dispatch({ type: 'set', value: 'sb' })
+
 
 
 export default {}
