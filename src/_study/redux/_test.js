@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-05 15:48:40
- * @LastEditTime: 2020-08-07 16:36:05
+ * @LastEditTime: 2020-08-08 09:39:28
  * @FilePath: /study-vue/src/_study/redux/_test.js
  * @Descripttion: 
  */
@@ -53,7 +53,7 @@ store.subscribe(() => {
   console.log('------->update:', store.getState())
 })
 store.dispatch({ type: 'add' })
-store.dispatch({ type: 'set', value: 'sb' })
+store.dispatch({ type: 'set', value: '张三' })
 
 
 
