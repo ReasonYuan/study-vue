@@ -8,7 +8,7 @@
 
 
 // 数组
-const girl: (string | number)[] = ['nice', 'teacher', 28];
+const girl0: (string | number)[] = ['nice', 'teacher', 28];
 // 元组
 const girl2: [string, string, number] = ['nice', 'teacher', 28]; // 换位置会报数据错误
 // CSV (以前的一种类型)
