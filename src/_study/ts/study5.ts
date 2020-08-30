@@ -6,7 +6,6 @@
  * @Descripttion: 元组
  */
 
-
 // 数组
 const girl0: (string | number)[] = ['nice', 'teacher', 28];
 // 元组
