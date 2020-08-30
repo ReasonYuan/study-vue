@@ -11,6 +11,7 @@ const undefinedArr : undefined[] = [undefined, undefined]  // 只能放undefined
 
 const arr :(number | string)[] = [2, 'str', '3']
   
+
 // -- 数组里是对象
 const girls : {name: string, age: number}[] = [
   {name: '张三', age: 18},
