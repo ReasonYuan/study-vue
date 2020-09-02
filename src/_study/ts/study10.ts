@@ -1,12 +1,10 @@
 /*
  * @Author: reason
  * @Date: 2020-09-02 15:10:43
- * @LastEditTime: 2020-09-02 15:17:36
+ * @LastEditTime: 2020-09-02 15:19:22
  * @FilePath: /study-vue/src/_study/ts/study10.ts
  * @Descripttion: 类的构造函数
  */
-
-// private 保护类型，通过Getter、Setter获取属性
 
 class LS {
   // public name: string;
