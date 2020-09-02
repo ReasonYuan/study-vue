@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-25 15:35:19
- * @LastEditTime: 2020-08-25 15:46:49
+ * @LastEditTime: 2020-09-02 15:10:15
  * @FilePath: /study-vue/src/_study/ts/study7.ts
  * @Descripttion:  propname(任何属性名) 、 any(任何类型) 、 对方法的约束、 接口的继承
  */
@@ -56,14 +56,14 @@ class Jie implements Girl3 {
 
 
 // 类型继承
-interface Teacher extends Girl3 {
+interface Teacher2 extends Girl3 {
   teach(): string
 }
 
 
 
 // 得到简历
-const getSomething = (gril: Teacher) => {
+const getSomething = (gril: Teacher2) => {
   console.log(`${gril.name} 年龄:${gril.age} 胸围:${gril.bust}`);
   gril.waistline && console.log(`腰围是: ${gril.waistline}`);
   gril.sex && console.log(`性别是: ${gril.sex}`)
