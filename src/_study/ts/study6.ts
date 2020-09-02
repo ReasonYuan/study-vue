@@ -6,6 +6,7 @@
  * @Descripttion: interface
  */
 
+
 // ============= 原始方法 ============ 
 // 筛选简历
 const screenResume = (name: string, age: number, bust: number) => {
@@ -17,7 +18,6 @@ const screenResume = (name: string, age: number, bust: number) => {
 const getResume = (name: string, age: number, bust: number) => {
   console.log(`${name} 年龄:${age} 胸围:${bust}`)
 }
-
 
 screenResume('小丽', 18, 92);
 getResume('小彤', 18, 88);
