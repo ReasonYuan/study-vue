@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-02 15:19:15
- * @LastEditTime: 2020-09-02 15:27:05
+ * @LastEditTime: 2020-09-02 15:28:00
  * @FilePath: /study-vue/src/_study/ts/study11.ts
  * @Descripttion: 类的Getter、Setter和static
  */
@@ -24,6 +24,7 @@ class LSS {
 const ds = new LSS(28);
 ds.age = 25
 console.log(ds.age)
+
 
 /**
  * ===========================
