@@ -1,11 +1,12 @@
 /*
  * @Author: reason
  * @Date: 2020-07-08 13:51:48
- * @LastEditTime: 2020-09-03 19:40:56
+ * @LastEditTime: 2020-09-03 19:57:21
  * @FilePath: /study-vue/src/_study/promise/simple.js
  * @Descripttion: 
  */
 
+ 
 export default {
 }
 
