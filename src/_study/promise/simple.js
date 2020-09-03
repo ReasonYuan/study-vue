@@ -1,7 +1,13 @@
+/*
+ * @Author: reason
+ * @Date: 2020-07-08 13:51:48
+ * @LastEditTime: 2020-09-03 19:04:01
+ * @FilePath: /study-vue/src/_study/promise/simple.js
+ * @Descripttion: 
+ */
 
 
 export default {
-
 }
 
 function Promise(fn) {
