@@ -6,7 +6,6 @@
  * @Descripttion: interface
  */
 
-
 // ============= 原始方法 ============ 
 // 筛选简历
 const screenResume = (name: string, age: number, bust: number) => {
