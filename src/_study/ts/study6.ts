@@ -52,6 +52,5 @@ const girl = {
 screenResume2(girl); getResume2(girl);
 
 
-
 // 对比类型别名
 type Girl1 = string 
