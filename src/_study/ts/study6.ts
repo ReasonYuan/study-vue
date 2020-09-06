@@ -6,7 +6,6 @@
  * @Descripttion: interface
  */
 
- 
 // ============= 原始方法 ============ 
 // 筛选简历
 const screenResume = (name: string, age: number, bust: number) => {
@@ -21,6 +20,7 @@ const getResume = (name: string, age: number, bust: number) => {
 
 screenResume('小丽', 18, 92);
 getResume('小彤', 18, 88);
+
 
 // ============= 采用接口形式 ============ 
 interface Girl {
