@@ -19,13 +19,13 @@ class Staff {
         this.work()
         console.log('<-打下班卡-')
         this.leave()
-		}
-		// 去上班
+	}
+	// 去上班
     goto() { }
     // 离开
     leave() { }
     // 工作
-		work () { }
+	work () { }
 }
 // 具体实现：老王
 class LaoWang extends Staff {
