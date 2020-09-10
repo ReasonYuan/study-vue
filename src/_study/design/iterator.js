@@ -18,7 +18,7 @@ Array.prototype.each = function (callback) {
   }
 }
 
-const ary = [];
+// const ary = [];
 [1, 2].each((item, idx, array) => {
   console.log(`item: ${item}, index: ${idx}, array: ${array}`)
 })
