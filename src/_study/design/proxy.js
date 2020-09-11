@@ -19,6 +19,7 @@ function proxySendMsg (msg) {
     console.log('no msg find')
     return
   }
+
   msg += ' !!!'
   sendMsg(msg)
 }
