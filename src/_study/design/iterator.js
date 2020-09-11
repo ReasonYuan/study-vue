@@ -6,10 +6,9 @@
  * @Descripttion: 迭代器模式
  */
 
-[1,2,3].forEach((item, index, arr) => {
+[1, 2, 3].forEach((item, index, arr) => {
   console.log(item, index, arr)
 })
-
 
 Array.prototype.each = function (callback) {
   if (!callback) return;
@@ -27,8 +26,8 @@ Array.prototype.each = function (callback) {
 // console.log(Object.prototype.toString.call(ary))
 // 外部迭代器
 const each = function (array, callback) {
-  if (!array || !callback)return;
-  for(let i = 0; i < array.length; i++) {
+  if (!array || !callback) return;
+  for (let i = 0; i < array.length; i++) {
     callback(array[i], i, array)
   }
 }
