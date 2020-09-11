@@ -23,6 +23,7 @@ Array.prototype.each = function (callback) {
 })
 
 
+
 // console.log(Object.prototype.toString.call(ary))
 // 外部迭代器
 const each = function (array, callback) {
