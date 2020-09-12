@@ -7,7 +7,6 @@
  */
 
 // ===== 保护代理 =====
-
 // 主体，发送消息
 function sendMsg (msg) {
   console.log(msg)
