@@ -22,8 +22,6 @@ Array.prototype.each = function (callback) {
   console.log(`item: ${item}, index: ${idx}, array: ${array}`)
 })
 
-
-
 // console.log(Object.prototype.toString.call(ary))
 // 外部迭代器
 const each = function (array, callback) {
