@@ -1,11 +1,12 @@
 /*
  * @Author: reason
  * @Date: 2020-09-15 17:38:42
- * @LastEditTime: 2020-09-16 11:30:58
+ * @LastEditTime: 2020-09-16 19:52:44
  * @FilePath: /study-vue/src/_study/design/chain.js
  * @Descripttion: 责任链模式
  */
 
+ 
 // 流程
 function Handler() {
   this.next = null;
