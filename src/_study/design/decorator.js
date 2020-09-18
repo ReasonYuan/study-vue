@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 15:10:13
- * @LastEditTime: 2020-09-18 17:00:32
+ * @LastEditTime: 2020-09-18 17:01:03
  * @FilePath: /study-vue/src/_study/design/decorator.js
  * @Descripttion: 装饰模式
  */
@@ -19,7 +19,6 @@ class VPNDecortor {
   constructor(coder) {
     this.coder = coder
   }
-
   skill () {
     this.coder.skill()
     console.log('会翻墙')
