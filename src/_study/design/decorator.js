@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 15:10:13
- * @LastEditTime: 2020-09-14 15:36:16
+ * @LastEditTime: 2020-09-18 17:00:32
  * @FilePath: /study-vue/src/_study/design/decorator.js
  * @Descripttion: 装饰模式
  */
@@ -44,7 +44,6 @@ const coder3 = new CookDecortor(coder2)
 coder.skill()
 coder2.skill()
 coder3.skill()
-
 
 
 // ========= 装饰函数 =========
