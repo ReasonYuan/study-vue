@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 10:13:28
- * @LastEditTime: 2020-09-18 16:59:32
+ * @LastEditTime: 2020-09-18 16:59:55
  * @FilePath: /study-vue/src/_study/design/flyweight.js
  * @Descripttion: 享元模式
  */
@@ -15,6 +15,7 @@ const FlyWeight = {
       this.y = y;
   }
 }
+
 // 玩家
 const Player = function(x, y, color) {
   this.x = x;
