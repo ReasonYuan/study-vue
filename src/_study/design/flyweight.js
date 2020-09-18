@@ -1,10 +1,11 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 10:13:28
- * @LastEditTime: 2020-09-15 17:14:18
+ * @LastEditTime: 2020-09-18 16:59:32
  * @FilePath: /study-vue/src/_study/design/flyweight.js
  * @Descripttion: 享元模式
  */
+
 // 共享部分
 const FlyWeight = {
   moveX: function(x) {
