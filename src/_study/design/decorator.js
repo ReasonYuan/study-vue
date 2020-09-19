@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 15:10:13
- * @LastEditTime: 2020-09-19 18:10:46
+ * @LastEditTime: 2020-09-19 18:10:59
  * @FilePath: /study-vue/src/_study/design/decorator.js
  * @Descripttion: 装饰模式
  */
@@ -13,7 +13,6 @@ class Coder {
     console.log('会编程')
   }
 }
-
 
 // 装饰器，会翻墙
 class VPNDecortor {
