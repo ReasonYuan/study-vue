@@ -1,12 +1,11 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 15:10:13
- * @LastEditTime: 2020-09-19 18:11:27
+ * @LastEditTime: 2020-09-19 18:11:40
  * @FilePath: /study-vue/src/_study/design/decorator.js
  * @Descripttion: 装饰模式
  */
 
- 
 // 程序员
 class Coder {
   skill () {
