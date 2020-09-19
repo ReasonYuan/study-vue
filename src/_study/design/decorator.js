@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-14 15:10:13
- * @LastEditTime: 2020-09-19 18:11:40
+ * @LastEditTime: 2020-09-19 18:11:53
  * @FilePath: /study-vue/src/_study/design/decorator.js
  * @Descripttion: 装饰模式
  */
@@ -66,4 +66,4 @@ function close () {
 
 let action = decoratorAfter(open, push)
 action = decoratorAfter(action, close)
-action() 
+action()
