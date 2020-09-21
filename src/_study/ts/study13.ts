@@ -1,3 +1,6 @@
 
 // tsconfig.json
-const person2: string = 'dsb'
+const person3: string = 'dsb'
+console.log('---person:', person3)
+
+const name5 = "hello"
