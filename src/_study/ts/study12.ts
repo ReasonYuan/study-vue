@@ -1,14 +1,13 @@
 /*
  * @Author: reason
  * @Date: 2020-09-21 09:38:52
- * @LastEditTime: 2020-09-21 10:07:56
+ * @LastEditTime: 2020-09-22 15:21:41
  * @FilePath: /study-vue/src/_study/ts/study12.ts
  * @Descripttion: 抽象类和只读属性的使用
  */
 
  // ======= 只读属性 =========
 class Person2 {
-
   public readonly _name: string // 只读属性
 
   // constructor (public name: string) { }
