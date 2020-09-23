@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-21 09:38:52
- * @LastEditTime: 2020-09-23 14:17:29
+ * @LastEditTime: 2020-09-23 14:17:42
  * @FilePath: /study-vue/src/_study/ts/study12.ts
  * @Descripttion: 抽象类和只读属性的使用
  */
@@ -20,6 +20,8 @@ const person3 = new Person2('hello world')
 // console.log(person3.name)
 // person._name = 'dsb'
 console.log(person3._name)
+
+
 
 // ======= 类的继承 =======
 abstract class Girl2 {
