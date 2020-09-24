@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-09-02 14:48:06
- * @LastEditTime: 2020-09-02 14:55:39
+ * @LastEditTime: 2020-09-24 10:03:05
  * @FilePath: /study-vue/src/_study/ts/study8.ts
  * @Descripttion: 类的概念和使用 - 继承、重写
  */
@@ -14,6 +14,7 @@ class Lady {
 }
 const goddess = new Lady()
 console.log(goddess.sayHello())
+
 
 // 继承
 class Girl extends Lady {
