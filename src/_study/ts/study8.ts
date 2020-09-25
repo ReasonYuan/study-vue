@@ -1,11 +1,12 @@
 /*
  * @Author: reason
  * @Date: 2020-09-02 14:48:06
- * @LastEditTime: 2020-09-25 16:00:05
+ * @LastEditTime: 2020-09-25 16:23:10
  * @FilePath: /study-vue/src/_study/ts/study8.ts
  * @Descripttion: 类的概念和使用 - 继承、重写
  */
 
+ 
 class Lady {
   content = 'Hi, World'
   sayHello () {
