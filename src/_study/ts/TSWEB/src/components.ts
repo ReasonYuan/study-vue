@@ -1,17 +1,17 @@
 /*
  * @Author: reason
  * @Date: 2020-10-07 11:40:36
- * @LastEditTime: 2020-10-07 14:00:56
+ * @LastEditTime: 2020-10-07 14:04:17
  * @FilePath: /study-vue/src/_study/ts/TSWEB/src/components.ts
  * @Descripttion: 
  */
-namespace Components {
+// namespace Components {
   // 子命名空间
-  export namespace SubComponents {
-    export class Test {
+  // export namespace SubComponents {
+  //   export class Test {
 
-    }
-  }
+  //   }
+  // }
 
   export class Hader {
     constructor () {
@@ -37,4 +37,4 @@ namespace Components {
       document.body.appendChild(elem)
     }
   }
-}
+// }

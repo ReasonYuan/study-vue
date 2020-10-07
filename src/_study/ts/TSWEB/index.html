@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 11:27:24
- * @LastEditTime: 2020-10-07 14:02:32
+ * @LastEditTime: 2020-10-07 14:15:29
  * @FilePath: /study-vue/src/_study/ts/TSWEB/index.html
  * @Descripttion: 
 -->
@@ -10,11 +10,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 为了运行 define 语法 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+  
   <script src="./build/page.js"></script>
   <!-- <script src="./build/components.js"></script> -->
   <title>Document</title>
 </head>
 <body>
-  <script>new Home.Page()</script>
+  <script>
+    // new Home.Page()
+    require(["page"], function(page){
+      new page.default();
+    })
+  </script>
 </body>
 </html>
