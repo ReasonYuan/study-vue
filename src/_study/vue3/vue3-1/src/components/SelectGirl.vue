@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-10-07 17:11:33
+ * @LastEditTime: 2020-10-07 17:21:21
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/SelectGirl.vue
  * @Descripttion: setup 和 ref 函数
 -->
@@ -54,7 +54,7 @@
 
 
 // ===== reactive =====
-import { reactive, toRefs, onBeforeMount, onMounted, onBeforeUpdate, onUpdated } from "vue"
+import { reactive, toRefs, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onRenderTracked, onRenderTriggered } from "vue"
 
 interface DataProps {
   girls: string[];
@@ -89,6 +89,13 @@ export default {
 
     onUpdated(() => {
       console.log('5 - 组件更新之后执行：onUpdated')
+    });
+
+    // onRenderTracked((event: any) => {
+    //   console.log('状态跟踪钩子函数 -----> ', event)
+    // });
+    onRenderTriggered((event: any) => {
+      console.log('单一状态跟踪钩子函数 -----> ', event)
     })
 
 
@@ -97,6 +104,7 @@ export default {
     return { ...refData }
   },
 
+  // ===== vue2的生命周期 ===== 
   beforeCreate() {
     console.log('#1.1 - 组件创建之前：beforeCreate')
   },
@@ -120,10 +128,15 @@ export default {
 // setup
 // beforeCreate created
 
-// onBeforeUnmount()  // 组件卸载之前执行 <= beforeDestroy
-// onUnmounted()      // 组件销毁之后执行 <= destroyed
-// onActivated()      // 组件激活时，在组件<keep-alive></keep-alive>内存在
-// onDeactivated()    // 组件未激活时（到后台时），在组件<keep-alive></keep-alive>内存在
-// onErrorCaptured    // 捕获子组件异常时
+// onBeforeUnmount()    // 组件卸载之前执行 <= beforeDestroy
+// onUnmounted()        // 组件销毁之后执行 <= destroyed
+// onActivated()        // 组件激活时，在组件<keep-alive></keep-alive>内存在
+// onDeactivated()      // 组件未激活时（到后台时），在组件<keep-alive></keep-alive>内存在
+// onErrorCaptured()    // 捕获子组件异常时
+
+
+// onRenderTracked()    // 状态跟踪：每一个数据
+// onRenderTriggered()  // 状态触发：只跟踪一个值
+
 
 </script>
