@@ -5,12 +5,9 @@
  * @FilePath: /study-vue/src/_study/ts/TSTest/src/page.ts
  * @Descripttion: 
  */
-
-declare var $: any // 解决下面 $ 报错找不到的问题
-
-const teacher: string = '悟空'
-console.log(teacher)
-
-$(function(){
-  alert('sb')
-})
+// 解决下面 $ 报错找不到的问题
+const teacher = '悟空';
+console.log(teacher);
+$(function () {
+  alert('sb');
+});

@@ -1,0 +1,12 @@
+/*
+ * @Author: reason
+ * @Date: 2020-10-07 14:19:39
+ * @LastEditTime: 2020-10-07 14:34:43
+ * @FilePath: /study-vue/src/_study/ts/TSTest/src/page.ts
+ * @Descripttion: 
+ */
+const teacher = '悟空';
+console.log(teacher);
+$(function () {
+  alert('sb');
+});
