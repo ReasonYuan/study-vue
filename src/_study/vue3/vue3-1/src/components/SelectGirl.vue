@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-10-08 11:12:58
+ * @LastEditTime: 2020-10-08 16:21:15
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/SelectGirl.vue
  * @Descripttion: setup 和 ref 函数
 -->
@@ -133,7 +133,6 @@ export default {
 // onActivated()        // 组件激活时，在组件<keep-alive></keep-alive>内存在
 // onDeactivated()      // 组件未激活时（到后台时），在组件<keep-alive></keep-alive>内存在
 // onErrorCaptured()    // 捕获子组件异常时
-
 
 // onRenderTracked()    // 状态跟踪：每一个数据
 // onRenderTriggered()  // 状态触发：只跟踪一个值
