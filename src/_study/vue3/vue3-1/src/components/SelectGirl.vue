@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-10-08 16:21:15
+ * @LastEditTime: 2020-10-08 16:32:29
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/SelectGirl.vue
  * @Descripttion: setup 和 ref 函数
 -->
@@ -136,4 +136,5 @@ export default {
 
 // onRenderTracked()    // 状态跟踪：每一个数据
 // onRenderTriggered()  // 状态触发：只跟踪一个值
+
 </script>
