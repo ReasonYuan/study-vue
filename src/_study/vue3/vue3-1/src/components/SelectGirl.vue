@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-10-08 17:29:36
+ * @LastEditTime: 2020-10-09 10:15:33
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/SelectGirl.vue
  * @Descripttion: setup 和 ref 函数
 -->
@@ -32,6 +32,8 @@
       {{index}}:{{item}}
     </button>
     <div>您选择了 {{selectGirl}} 为你服务</div>
+    <button @click="overAction">确认</button>
+    <div>{{overText}}</div>
   </div>
   </div>
 </template>
@@ -54,7 +56,7 @@
 
 
 // ===== reactive =====
-import { reactive, toRefs, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onRenderTracked, onRenderTriggered } from "vue"
+import { ref, reactive, toRefs, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onRenderTracked, onRenderTriggered, watch } from "vue"
 
 interface DataProps {
   girls: string[];
@@ -75,36 +77,52 @@ export default {
     });
     // return { data }
 
+    // ===== 生命周期钩子函数 =====
+    /*
     onBeforeMount(() => {
       console.log('2 - 组件挂载到页面之前执行：onBeforeMount')
     });
-
     onMounted(() => {
       console.log('3 - 组件挂载到页面之后执行：onMounted')
     });
-
     onBeforeUpdate(() => {
       console.log('4 - 组件更新之前执行：onBeforeUpdate')
     });
-
     onUpdated(() => {
       console.log('5 - 组件更新之后执行：onUpdated')
     });
 
+    // ===== 状态跟踪 =====
     // onRenderTracked((event: any) => {
     //   console.log('状态跟踪钩子函数 -----> ', event)
     // });
-    onRenderTriggered((event: any) => {
-      console.log('单一状态跟踪钩子函数 -----> ', event)
-    })
+    // onRenderTriggered((event: any) => {
+    //   console.log('单一状态跟踪钩子函数 -----> ', event)
+    // })
+    */
 
 
     // ===== toRefs =====
     const refData = toRefs(data)
-    return { ...refData }
+    const overText = ref('美人集')
+    const overAction = () => {
+      overText.value = '确认完成：' + data.selectGirl
+    }
+
+    watch([overText, () => data.selectGirl], (newValue, oldValue) => {
+      console.log('-------new:', newValue, oldValue)
+      document.title = overText.value
+    })
+
+    return { 
+      ...refData,
+      overText,
+      overAction
+    }
   },
 
-  // ===== vue2的生命周期 ===== 
+  // ===== vue2的生命周期 =====
+  /*
   beforeCreate() {
     console.log('#1.1 - 组件创建之前：beforeCreate')
   },
@@ -120,6 +138,7 @@ export default {
   updated() {
     console.log('#5.1 - 组件更新之后执行：updated')
   }
+  */
   // beforeDestroy => onBeforedUnmount
   // destroyed => onUnmounted
 }
