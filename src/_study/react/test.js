@@ -1,16 +1,17 @@
 /*
  * @Author: reason
  * @Date: 2020-10-10 10:17:32
- * @LastEditTime: 2020-10-10 11:04:23
+ * @LastEditTime: 2020-10-10 11:08:32
  * @FilePath: /study-vue/src/_study/react/test.js
  * @Descripttion: 
  */
 
-// import React from './react'
+import React from './react'
 
-// const div = <div className="hello">hello</div>
-
-// React.createElement("div", {className: "header"}, "hello")
+const div = <div className="hello">hello</div>
+console.log('-----div', div)
+// babel 转换后：
+React.createElement("div", {className: "header"}, "hello")
 
 
 /*
