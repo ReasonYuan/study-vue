@@ -13,7 +13,6 @@ console.log('-----div', div)
 // babel 转换后：
 React.createElement("div", {className: "header"}, "hello")
 
-
 /*
 const array = ['a', 'b', 'c', 'd', 'e', 'f']
 const map = {
