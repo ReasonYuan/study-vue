@@ -31,6 +31,7 @@ for (let item in map) {
   console.log('---------map:', item)
 }
 
+
 // for of 只能数组用，用于遍历数组
 console.log('\n====== of =====')
 for (let item of array) {
