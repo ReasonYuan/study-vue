@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-05 15:48:40
- * @LastEditTime: 2020-10-12 11:12:41
+ * @LastEditTime: 2020-10-12 11:13:09
  * @FilePath: /study-vue/src/_study/redux/_test.js
  * @Descripttion: 
  */
@@ -40,7 +40,6 @@ const reducerB = (state = initStateB, action) => {
 
 // const actionCreator = () => {
 // }
-
 
 const reducers = combineReducers({
   a: reducer,
