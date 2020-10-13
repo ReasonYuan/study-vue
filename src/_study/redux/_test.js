@@ -56,4 +56,3 @@ store.dispatch({ type: 'set', value: '张三' })
 
 export default {}
 
-
