@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-08-05 15:48:40
- * @LastEditTime: 2020-10-16 17:24:22
+ * @LastEditTime: 2020-10-17 09:28:54
  * @FilePath: /study-vue/src/_study/redux/_test.js
  * @Descripttion: 
  */
@@ -52,7 +52,6 @@ store.subscribe(() => {
 })
 store.dispatch({ type: 'add' })
 store.dispatch({ type: 'set', value: '张三' })
-
 
 export default {}
 
