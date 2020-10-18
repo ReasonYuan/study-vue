@@ -21,6 +21,7 @@ const map = {
   age: 18
 }
 
+
 // for in 遍历的key
 console.log('====== in =====')
 for (let item in array) {
