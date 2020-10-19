@@ -1,7 +1,7 @@
 /*
  * @Author: reason
  * @Date: 2020-10-10 10:17:32
- * @LastEditTime: 2020-10-10 11:08:32
+ * @LastEditTime: 2020-10-19 15:30:35
  * @FilePath: /study-vue/src/_study/react/test.js
  * @Descripttion: 
  */
@@ -20,6 +20,7 @@ const map = {
   gender: '男',
   age: 18
 }
+
 
 // for in 遍历的key
 console.log('====== in =====')
