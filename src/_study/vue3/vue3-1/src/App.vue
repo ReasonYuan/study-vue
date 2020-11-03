@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 15:36:40
- * @LastEditTime: 2020-11-02 14:00:25
+ * @LastEditTime: 2020-11-02 14:21:21
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/App.vue
  * @Descripttion: 
 -->
@@ -17,13 +17,13 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 // import HelloWorld from './components/HelloWorld.vue';
-import SelectGirl from './components/SelectGirl.vue';
-import Content from './components/Timer.vue'
+// import Content from './components/SelectGirl.vue';
+// import Content from './components/Timer.vue'
+import Content from './components/RadomGirl.vue'
 
 @Options({
   components: {
     // HelloWorld,
-    SelectGirl,
     Content
   },
 })
