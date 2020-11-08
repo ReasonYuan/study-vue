@@ -14,7 +14,6 @@ const React = {
   }
 }
 
-
 const ReactDom = {
   render (vdom, container) {
     container.innerHTML = ""
