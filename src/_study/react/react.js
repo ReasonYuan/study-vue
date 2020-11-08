@@ -6,7 +6,6 @@
  * @Descripttion: 手写react
  */
 
-
 const React = {
   createElement(tag, attrs, ...children) {
     return {
