@@ -7,7 +7,6 @@
  */
 
 
-
 const React = {
   createElement(tag, attrs, ...children) {
     return {
