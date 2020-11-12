@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-11-12 08:53:35
+ * @LastEditTime: 2020-11-12 08:53:50
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/SelectGirl.vue
  * @Descripttion: setup 和 ref 函数
 -->
@@ -9,7 +9,6 @@
 <template>
   <div>
   <h2>Hello World</h2>
-  
   <!--
   <div>
     <button v-for="(item, index) in girls" v-bind:key="index" @click="() => selectGirlFun(index)">
