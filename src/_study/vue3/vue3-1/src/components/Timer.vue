@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-11-14 08:47:08
+ * @LastEditTime: 2020-11-14 08:47:20
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/Timer.vue
  * @Descripttion: 模块化
 -->
@@ -29,4 +29,5 @@ export default {
     return { nowTime, getNowTime }
   },
 }
+
 </script>
