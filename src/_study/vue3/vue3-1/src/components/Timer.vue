@@ -1,11 +1,10 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-11-17 14:11:13
+ * @LastEditTime: 2020-11-17 14:11:41
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/Timer.vue
  * @Descripttion: 模块化
 -->
-
 
 <template>
   <div>{{nowTime}}</div>
