@@ -1,7 +1,7 @@
 <!--
  * @Author: reason
  * @Date: 2020-10-07 16:19:16
- * @LastEditTime: 2020-11-21 09:13:20
+ * @LastEditTime: 2020-11-21 09:13:30
  * @FilePath: /study-vue/src/_study/vue3/vue3-1/src/components/Timer.vue
  * @Descripttion: 模块化
 -->
@@ -10,6 +10,7 @@
   <div>{{nowTime}}</div>
   <div><button @click="getNowTime">计时开始</button></div>
 </template>
+
 
 <script lang="ts">
 // ===== reactive =====
